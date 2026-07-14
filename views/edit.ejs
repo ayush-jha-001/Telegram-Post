@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Your Ideas</title>
+    <link rel="stylesheet" href="/create.css">
+</head>
+<body>
+    <div class="create edit">
+    <h1>Username: @<%=post.username %></h1>
+    <p class="user-id">User-Id: @<%=post.id %></p>
+    <form action="/posts/<%= post.id %>?_method=patch" method="post">
+        <textarea cols="50" rows="10" name="ideas"><%= post.ideas %></textarea>
+        <button>Submit Data</button>
+    </form>
+    </div>
+</body>
+</html>

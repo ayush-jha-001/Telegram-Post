@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;    
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.create{
+    width: 300px;
+    /* background-color: rgba(0, 255, 255, 0.756); */
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    justify-content: center;
+    padding: 0.5rem;
+    box-shadow: 0 0 4px black;
+    transition: transform 1s ease 0s;
+}
+.edit{
+    width: 400px;
+}
+.user-id{
+    margin: 0.5rem 0rem;
+}
+.create:hover{
+    box-shadow: 0 0 8px black;
+    transform: translate(0px , -5px);
+}
+form{
+    width: 100%;
+}
+form input, textarea, button{
+    width: 100%;
+    outline: none;
+    background-color: transparent;
+    border: 2px solid aqua;
+    border-radius: 0.5rem;
+    padding: 0.15rem 0.5rem;
+    color: black;
+}

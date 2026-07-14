@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    align-items: center;
+    background-color: rgba(0, 255, 255, 0.422);
+    border: 2px solid aqua;
+    border-radius: 10px;
+    padding: 0.75rem;
+    height: 100vh;
+    overflow: auto;
+}
+.post-box{
+    background-color: aqua;
+    width: 100%;
+    margin: 0.25rem 0.25rem;
+    border-radius: 10px;
+    padding: 0.5rem;
+    box-shadow: 0 0 4px black;
+    transition: transform 1s ease 0s;
+}
+.post-box:hover{
+    box-shadow: 0 0 8px black;
+    transform: translate(0px,-3px);
+}
+.post-box h3{
+    font-style: italic;
+    text-decoration: underline;
+}
+h1{
+    color: maroon;
+    padding: 0.5rem;
+}
+a{
+    text-decoration: none;
+    font-style: italic;
+    font-size: 0.85rem;
+    margin-right: 1.5rem;
+}
+.ideas{
+    padding: 0.75rem 0.25rem;
+}
+.links{
+    display: flex;
+    justify-content: space-evenly;
+}
+form .delete-btn{
+    padding: 2px 0.4rem;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 1px solid black;
+    box-shadow: 0px 1px 3px black;
+}
